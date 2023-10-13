@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android" >-->
+    <!--&lt;!&ndash;<item android:state_enabled="true" android:state_pressed="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:drawable="@drawable/bg_rect_gray_corner_register"></item>&ndash;&gt;-->
+    <!--<item android:state_enabled="true" android:state_pressed="true"-->
+        <!--android:drawable="@drawable/bg_rect_blue_corner"></item>-->
+<!--</selector>-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#5B89FF" />
+    <corners android:radius="30dp" />
+</shape>

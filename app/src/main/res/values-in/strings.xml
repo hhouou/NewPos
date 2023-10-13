@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">ePayments POS</string>
+
+
+    <string name="login_input_number_hint">Masukan nomor akun</string>
+    <string name="login_input_password_hint">Masukan password</string>
+    <string name="login_button_login">Masuk</string>
+    <string name="login_go_to_register">Get Started Here</string>
+    <string name="login_empty_phone">Nomor akun harus diisi</string>
+    <string name="login_empty_password">Password harus diisi</string>
+    <!--======================================================================-->
+    <string name="mian_payment">Pembayaran</string>
+    <string name="mian_transactions">Transaksi</string>
+    <string name="mian_me">Saya</string>
+
+    <!--======================================================================-->
+    <string name="home_payment_latest_payment">Pembayaran Terakhir</string>
+    <string name="home_payment_amount">Jumlah</string>
+    <string name="home_payment_amount_input_hint">Masukan jumlah</string>
+    <string name="home_payment_checkout_plus">+&#160;</string>
+    <string name="home_payment_ok">OK</string>
+
+    <!--======================================================================-->
+    <string name="home_transactions_title">Riwayat Transaksi</string>
+    <!--======================================================================-->
+    <string name="home_me_cleared_transactions">Saldo</string>
+    <string name="home_me_pending">Ditunda</string>
+    <string name="home_me_currency">Mata Uang</string>
+    <string name="home_me_about">Tentang</string>
+    <string name="home_me_sign_out">Keluar</string>
+    <string name="home_me_language">Bahasa</string>
+
+    <!--======================================================================-->
+    <string name="select_currency_title">Pilih Mata Uang</string>
+    <string name="select_currency_confirm">Konfirmasi</string>
+    <!--======================================================================-->
+
+    <string name="select_cryptocurrency_title">Pilih Kripto</string>
+    <string name="select_cryptocurrency_wallet">Dompet</string>
+    <string name="select_crypto_currency">Kripto</string>
+    <!--======================================================================-->
+    <string name="receipt_title">Terima</string>
+    <string name="receipt_address">Alamat : </string>
+    <string name="receipt_copy_success">Copy Sukses</string>
+    <string name="receipt_with_amount">with amount</string>
+    <string name="receipt_without_amount">without amount</string>
+
+    <!--======================================================================-->
+    <string name="receipt_status_title">Terima</string>
+    <string name="receipt_status_crypto_amount">Jumlah Kripto : </string>
+    <string name="receipt_status_currency_amount">Jumlah Mata Uang : </string>
+    <string name="receipt_status_receive_address">Alamat Penerima : </string>
+    <string name="receipt_status_button_home">HOME</string>
+
+    <!--======================================================================-->
+    <string name="select_language_title">Select Language</string>
+
+    <!--======================================================================-->
+    <string name="pay_status_pending">Ditunda</string>
+    <string name="pay_status_payment_success">Pembayaran Berhasil</string>
+    <string name="pay_status_failed">Gagal</string>
+    <string name="pay_status_time_out">Waktu Habis</string>
+    <string name="pay_status_refund_success">Refund Sukses</string>
+
+    <!--======================================================================-->
+    <string name="print_merchant">MERCHANT:</string>
+    <string name="print_merchant_no">MERCHANT NO:</string>
+    <string name="print_fiat_amount">Jumlah Uang:</string>
+    <string name="print_payment_method">Metode Pembayaran:</string>
+    <string name="print_digital_amount">Jumlah digital:</string>
+    <string name="print_ordernum">ORDERNUM:</string>
+    <string name="print_date">TANGGAL:</string>
+
+    <!--======================================================================-->
+
+    <string name="error_merchant_not_exist">Akun tidak ada</string>//商户不存在
+    <string name="error_signature_error">Tanda tangan salah</string>//签名错误
+    <string name="error_request_failed">Permintaan gagal</string>//请求失败
+    <string name="error_login_again">Masuk lagi</string>//重新登录
+    <string name="error_wrong_password">Password Salah</string>//密码错误
+
+    <!--======================================================================-->
+
+    <string name="header_pulldown">Tarik kebawah untuk Refresh</string>//下拉刷新
+    <string name="header_refreshing">Refreshing</string>//正在刷新...
+    <string name="header_release">Lepas untuk Refresh</string>//释放立即刷新
+    <string name="header_finish">Refresh Selesai</string>//刷新完成
+    <string name="header_failed">Refresh Gagal</string>//刷新失败
+
+    <string name="footer_loading">Loading</string>//正在加载...
+    <string name="footer_finish">Loading Selesai</string>//加载完成
+    <string name="footer_failed">Loading Gagal</string>//加载失败
+    <string name="footer_nothing">Tidak ada data yang tersedia</string>//没有更多数据了
+
+    <string name="global_loading">Loading…</string>
+
+
+
+    <!--======================================================================-->
+    <string name="user_language_english">English</string>
+    <string name="user_language_indonesian">Indonesian</string>// 印尼 Indonesia
+    <string name="user_language_español">Español</string>// 西班牙 Español
+    <string name="user_language_português">português</string>//葡萄牙 português
+
+
+
+
+</resources>

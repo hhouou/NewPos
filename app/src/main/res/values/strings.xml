@@ -1,0 +1,177 @@
+<resources>
+<!--    <string name="app_name">ePayments POS</string>-->
+    <string name="app_name">Alchemy Pay</string>
+
+
+    <string name="login_input_number_hint">Enter Account Number</string>
+    <string name="login_input_password_hint">Enter Password</string>
+    <string name="login_button_login">Sign In</string>
+    <string name="login_go_to_register">Get Started Here</string>
+    <string name="login_empty_phone">Account number can\'t be blank</string>
+    <string name="login_empty_password">Password can\'t be blank</string>
+    <string name="login_pos_title">Alchemy Pay</string>
+<!--    <string name="login_pos_title">ePayments POS X Alchemy Pay</string>-->
+    <!--======================================================================-->
+    <string name="mian_payment">Payments</string>
+    <string name="mian_transactions">Transactions</string>
+    <string name="mian_me">Account</string>
+    <!--======================================================================-->
+    <string name="home_payment_latest_payment">Latest Payment</string>
+    <string name="home_payment_amount">Amount</string>
+    <string name="home_payment_amount_input_hint">Enter Amount</string>
+    <string name="home_payment_checkout_plus">+&#160;</string>
+    <string name="home_payment_ok">OK</string>
+
+    <!--======================================================================-->
+    <string name="home_transactions_title">Transaction Histroy</string>
+    <!--======================================================================-->
+    <string name="home_me_cleared_transactions">Cleared Transactions</string>
+    <string name="home_me_pending">Pending</string>
+    <string name="home_me_currency">Currency</string>
+    <string name="home_me_about">About</string>
+    <string name="home_me_sign_out">Sign Out</string>
+    <string name="home_me_language">Language</string>
+    <string name="home_me_exchange_rate">Exchange Rate</string>
+    <string name="home_me_transaction_summary">Transaction Summary</string>
+    <string name="transaction_summary_start_time">Start Time</string>
+    <string name="transaction_summary_end_time">End Time</string>
+    <string name="transaction_summary_test_merchant">Test Merchant</string>
+    <string name="transaction_summary_receipt_number">Receipt Number</string>
+    <string name="transaction_summary_type">Type</string>
+    <string name="transaction_summary_entries">Entries</string>
+    <string name="transaction_summary_amount">Amount</string>
+    <string name="transaction_summary">Summary</string>
+    <string name="transaction_summary_print">Print</string>
+
+    <!--======================================================================-->
+    <string name="select_currency_title">Select Currency</string>
+    <string name="select_currency_confirm">Confirm</string>
+    <!--======================================================================-->
+    <string name="select_crypto_title">Select Crypto</string>
+    <!--======================================================================-->
+    <string name="select_crypto_fiat">Select Fiat</string>
+    <!--======================================================================-->
+
+    <string name="select_cryptocurrency_title">Select Cryptocurrency</string>
+    <string name="select_cryptocurrency_wallet">Wallet</string>
+    <string name="select_cryptocurrency_fiat">Fiat Payment</string>
+    <string name="select_cryptocurrency_argentina">Argentina Payment</string>
+    <string name="select_crypto_currency">Cryptocurrency</string>
+    <!--======================================================================-->
+    <string name="receipt_title">Receive</string>
+    <string name="receipt_address">Address : </string>
+    <string name="receipt_copy_success">Copy Success</string>
+    <string name="receipt_with_amount">with amount</string>
+    <string name="receipt_without_amount">without amount</string>
+
+    <!--======================================================================-->
+    <string name="receipt_status_title">Receive</string>
+    <string name="receipt_status_crypto_amount">Crypto Amount : </string>
+    <string name="receipt_status_currency_amount">Currency Amount : </string>
+    <string name="receipt_status_receive_address">Receiving Address : </string>
+    <string name="receipt_status_time_pay">Time of Payment : </string>
+    <string name="receipt_status_button_home">HOME</string>
+
+    <!--======================================================================-->
+    <string name="select_language_title">Select Language</string>
+
+
+    <!--======================================================================-->
+    <string name="pay_status_pending">Pending</string>
+    <string name="pay_status_payment_success">Payment Successful</string>
+    <string name="pay_status_failed">Failed</string>
+    <string name="pay_status_time_out">Time Out</string>
+    <string name="pay_status_refund_success">Refund Successful</string>
+    <!--======================================================================-->
+    <string name="print_merchant">MERCHANT:</string>
+    <string name="print_merchant_no">MERCHANT NO:</string>
+    <string name="print_fiat_amount">Listed AMOUNT:</string>
+    <string name="print_payment_method">Payment Method:</string>
+    <string name="print_digital_amount">Digital Amount:</string>
+    <string name="print_ordernum">Order#:</string>
+    <string name="print_date">DATE:</string>
+
+    <!--======================================================================-->
+
+    <string name="error_merchant_not_exist">User Doesn’t Exist</string>
+    <string name="error_signature_error">Signature Incorrect</string>
+    <string name="error_request_failed">Request Failed</string>
+    <string name="error_login_again">Log in again</string>
+    <string name="error_wrong_password">Password Incorrect</string>
+    <string name="error_pay_failed">Error of payment</string>
+
+    <!--======================================================================-->
+
+    <string name="header_pulldown">Pull down to refresh</string>//下拉刷新
+    <string name="header_refreshing">Refreshing</string>//正在刷新...
+    <string name="header_release">Release to refresh</string>//释放立即刷新
+    <string name="header_finish">Refresh complete</string>//刷新完成
+    <string name="header_failed">Refresh Failed</string>//刷新失败
+
+    <string name="footer_loading">Loading…...</string>//正在加载...
+    <string name="footer_finish">Loading Complete</string>//加载完成
+    <string name="footer_failed">Loading Failed</string>//加载失败
+    <string name="footer_nothing">No More Data Available</string>//没有更多数据了
+
+    <string name="global_loading">Loading…</string>
+
+    <!--======================================================================-->
+    <string name="user_language_english">English</string>
+    <string name="user_language_indonesian">Indonesian</string>// 印尼 Indonesia
+    <string name="user_language_español">Español</string>// 西班牙 Español
+    <string name="user_language_português">português</string>//葡萄牙 português
+
+
+
+    <!--======================================================================-->
+    <string name="order_detail_title">Order Detail</string>
+    <string name="order_detail_no">Order No :</string>
+    <string name="order_detail_status">Status :</string>
+    <string name="order_detail_time">Time :</string>
+    <string name="order_detail_biling_message">Biling Message</string>
+    <string name="order_detail_fiat_amount">Fiat Amount :</string>
+    <string name="order_detail_digital_amount">Digital Amount :</string>
+    <string name="order_detail_paymeng_method">Payment Method :</string>
+    <string name="order_detail_order_created">Order Created :</string>
+    <string name="order_detail_address_to">Address To :</string>
+    <string name="order_detail_payment_message">Payment Message</string>
+    <string name="order_detail_payment_amount">Payment Amount :</string>
+    <string name="order_detail_order_payed">Order Payed :</string>
+    <string name="order_detail_blockchain_id">Blockchain ID :</string>
+    <string name="order_detail_order_closed">Order Closed :</string>
+    <string name="order_detail_address_from">Address From :</string>
+    <string name="order_detail_currency">Currency :</string>
+    <string name="order_detail_address">Address :</string>
+    <string name="order_detail_amount">Amount :</string>
+    <string name="order_detail_date">Date :</string>
+
+    <string name="order_detail_continue_to_pay">Continue to pay</string>
+    <string name="summary_not_support_printing">The current device does not support printing</string>
+
+    <!--======================================================================-->
+
+    <string name="fiat_card_title">Card Detail</string>
+    <string name="fiat_card_first_name">FirstName</string>
+    <string name="fiat_card_last_name">LastName</string>
+    <string name="fiat_card_full_email">Email</string>
+    <string name="fiat_card_number">Card Number</string>
+    <string name="fiat_card_date">Expiration Date</string>
+    <string name="fiat_card_cvv">CVV</string>
+    <string name="fiat_card_name_hint">Please enter your name</string>
+    <string name="fiat_card_email_hint">Please enter the correct email address</string>
+    <string name="fiat_card_number_hint">Please enter the card number</string>
+    <string name="fiat_card_date_hint">Please enter the correct date</string>
+    <string name="fiat_card_cvv_hint">Please enter the correct cvv</string>
+    <string name="fiat_card_phone_hint">Please enter your mobile phone number</string>
+    <string name="fiat_card_id_hint">Please enter the id number</string>
+
+    <string name="web_fiat_card_title">Pay</string>
+
+    <string name="argentina_pay_title">Enter Information</string>
+    <string name="argentina_pay_phne">Phone Number</string>
+    <string name="argentina_pay_id">ID</string>
+    <string name="argentina_pay_cnpj">CNPJ</string>
+    <string name="argentina_pay_cpf">CPF</string>
+
+
+</resources>

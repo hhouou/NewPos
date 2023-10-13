@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorAccent">@color/colorTitle</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseAppTheme">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    //底部弹窗动画效果
+    <style name="popWindow_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+    //顶部弹窗动画效果
+    <style name="popTop_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_exit_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_enter_anim</item>
+    </style>
+
+    //中间弹窗动画效果
+    <style name="popCenter.Animation" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/translate_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_dialog_out</item>
+    </style>
+
+    //checkbox样式
+    <style name="CustomCheckBoxTheme" parent="Widget.AppCompat.CompoundButton.CheckBox">
+          <item name="android:button">@drawable/bg_checkbox_agree</item>
+     </style>
+
+
+    <style name="text_editStyle" >
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_user_verify_code_grey</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

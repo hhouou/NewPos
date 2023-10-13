@@ -1,0 +1,192 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'com.jakewharton.butterknife'
+
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion = rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+    greendao {
+        schemaVersion 1
+        targetGenDir 'src/main/java'
+        daoPackage 'com.achpay.wallet.model.database.dao'
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias 'ACHPAY'
+            keyPassword 'cryptocurrency@achpay'
+            storeFile file('ACHPAY.jks')
+            storePassword 'cryptocurrency@achpay'
+        }
+        release {
+            keyAlias 'ACHPAY'
+            keyPassword 'cryptocurrency@achpay'
+            storeFile file('ACHPAY.jks')
+            storePassword 'cryptocurrency@achpay'
+        }
+    }
+//    signingConfigs {
+//        debug {
+//            keyAlias 'epayments'
+//            keyPassword 'cryptocurrency@achpay'
+//            storeFile file('epayments.jks')
+//            storePassword 'cryptocurrency@achpay'
+//        }
+//        release {
+//            keyAlias 'ACHPAY'
+//            keyPassword 'cryptocurrency@achpay'
+//            storeFile file('ACHPAY.jks')
+//            storePassword 'cryptocurrency@achpay'
+//        }
+//    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "API_BASE_URL", "\"${project.BASE_API_RELEASE}\""
+            buildConfigField "String", "SIGN_UP_URL", "\"${project.WEB_SIGNUP_RELEASE}\""
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "API_BASE_URL", "\"${project.BASE_API_DEBUG}\""
+            buildConfigField "String", "SIGN_UP_URL", "\"${project.WEB_SIGNUP_DEBUG}\""
+
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "ach_"  + defaultConfig.versionName + "_" + buildType.name+ ".apk"
+        }
+    }
+
+
+    //拷贝apk到导出的路径
+//    tasks.whenTaskAdded { task ->
+//        if (task.name.startsWith("assemble")) {
+//            // 如果是assemble开始任务，在最后执行拷贝apk
+//            task.doFirst {
+//                android.applicationVariants.all { variant ->
+//                    File outputApkFile = new File("/Users/houhaoxuan/Documents/GitAndroidWork" + "Alchemy_" + defaultConfig.versionName + ".apk")
+//                    if (outputApkFile.exists()) {
+//                        outputApkFile.delete()
+//                    }
+//                }
+//            }
+//
+//        }
+//    }
+
+
+}
+
+repositories {
+    jcenter()
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    implementation rootProject.ext.support["design"]
+
+    api(rootProject.ext.dependencies.rxjava) {
+        exclude group: 'com.android.support'
+    }
+    api(rootProject.ext.dependencies.rxandroid) {
+        exclude group: 'com.android.support'
+    }
+
+    api 'com.android.support:appcompat-v7:28.0.0'
+    api 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+
+    //network框架
+    api rootProject.ext.dependencies.network
+
+    api rootProject.ext.dependencies.fragmentationx
+
+    implementation rootProject.ext.dependencies.rxpermissions
+
+    implementation rootProject.ext.dependencies.greendao
+
+    implementation rootProject.ext.dependencies.glide
+
+    implementation rootProject.ext.dependencies.swipebacklayout
+
+    implementation rootProject.ext.dependencies.recyclerview
+
+    implementation rootProject.ext.dependencies["html-textview"]
+
+    implementation rootProject.ext.dependencies["appcompat"]
+
+    implementation rootProject.ext.dependencies["adapter"]
+
+    implementation rootProject.ext.dependencies["roundedimageview"]
+
+    implementation rootProject.ext.dependencies["websocket"]
+
+    implementation rootProject.ext.dependencies["qrcode"]
+
+    implementation rootProject.ext.dependencies.immersionbar
+
+
+    /** *注解 ***/
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+
+    /** *依赖注入 ***/
+    api 'com.google.dagger:dagger:2.15'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.15'
+    compileOnly 'org.glassfish:javax.annotation:10.0-b28'
+
+
+    /** *侧滑删除,下拉刷新,上拉加载 ***/
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+
+
+    //wiseasy Pos机打印
+    implementation files('libs/SDK4EmvBinderV2.2.13.jar')
+    implementation files('libs/SDK4BaseBinderV2.2.12.jar')
+    implementation files('libs/SDK4KeyManagerBinderV2.2.06.jar')
+
+
+    //sunni Pos机打印
+    implementation 'com.sunmi:printerlibrary:1.0.15'
+
+
+}

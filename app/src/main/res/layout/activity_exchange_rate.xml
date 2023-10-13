@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="25dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_black_back" />
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/home_me_exchange_rate"
+            android:textColor="@color/colorTxt"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_print"
+            android:layout_width="18dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_print" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_difital"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg_rect_grey_exchangerate"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/et_difital_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:hint="0.0"
+                android:inputType="numberDecimal"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/colorTxt"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/tv_difital"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/colorTxt"
+                android:textSize="14sp"
+                tools:text="ETH" />
+
+            <ImageView
+                android:id="@+id/iv_difital"
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/icon_black_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/ll_difital"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg_rect_grey_exchangerate"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/et_fiat_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:hint="0.0"
+                android:inputType="numberDecimal"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/colorTxt"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/tv_fiat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/colorTxt"
+                android:textSize="14sp"
+                tools:text="ETH" />
+
+            <ImageView
+                android:id="@+id/iv_fiat"
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/icon_black_right" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_switch" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        tools:text="ETH/HKD = 200.45"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/textcolor"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"/>
+
+    <com.achpay.wallet.widget.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        app:hl_cornerRadius="4dp"
+        app:hl_shadowColor="@color/shadow_color"
+        app:hl_shadowLimit="8dp">
+
+        <com.achpay.wallet.widget.KeyboardView
+            android:id="@+id/kv_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_alignParentBottom="true" />
+    </com.achpay.wallet.widget.ShadowLayout>
+
+</LinearLayout>

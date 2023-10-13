@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">ePayments POS</string>
+
+
+    <string name="login_input_number_hint">Introduzca el Número de la Cuenta</string>
+    <string name="login_input_password_hint">Introduzca la Contraseña</string>
+    <string name="login_button_login">Iniciar Sesión</string>
+    <string name="login_go_to_register">Get Started Here</string>
+    <string name="login_empty_phone">El Número de la Cuenta no puede quedarse en blanco</string>
+    <string name="login_empty_password">La Contraseña no puede quedarse en blanco</string>
+    <!--======================================================================-->
+    <string name="mian_payment">Pagos</string>
+    <string name="mian_transactions">Transacciones</string>
+    <string name="mian_me">Yo</string>
+    <!--======================================================================-->
+    <string name="home_payment_latest_payment">El Ultimo Pago</string>
+    <string name="home_payment_amount">Importe</string>
+    <string name="home_payment_amount_input_hint">Introduzca el Importe</string>
+    <string name="home_payment_checkout_plus">+&#160;</string>
+    <string name="home_payment_ok">Hecho</string>
+
+    <!--======================================================================-->
+    <string name="home_transactions_title">Historial de Transacciones</string>
+    <!--======================================================================-->
+    <string name="home_me_cleared_transactions">Saldo</string>
+    <string name="home_me_pending">Pendiente</string>
+    <string name="home_me_currency">Moneda</string>
+    <string name="home_me_about">Sobre Nosotros</string>
+    <string name="home_me_sign_out">Cerrar Sesión</string>
+    <string name="home_me_language">Idioma</string>
+
+    <!--======================================================================-->
+    <string name="select_currency_title">Elija la Moneda</string>
+    <string name="select_currency_confirm">Confirme</string>
+    <!--======================================================================-->
+
+    <string name="select_cryptocurrency_title">Elija la Criptomoneda</string>
+    <string name="select_cryptocurrency_wallet">Monedero</string>
+    <string name="select_crypto_currency">Criptomoneda</string>
+    <!--======================================================================-->
+    <string name="receipt_title">Recibir</string>
+    <string name="receipt_address">Dirección : </string>
+    <string name="receipt_copy_success">Copia Exitosa</string>
+    <string name="receipt_with_amount">with amount</string>
+    <string name="receipt_without_amount">without amount</string>
+
+    <!--======================================================================-->
+    <string name="receipt_status_title">Recibir</string>
+    <string name="receipt_status_crypto_amount">Importe de la Criptomoneda : </string>
+    <string name="receipt_status_currency_amount">Importe de la Moneda : </string>
+    <string name="receipt_status_receive_address">Dirección Recipiente : </string>
+    <string name="receipt_status_button_home">PORTAL</string>
+
+    <!--======================================================================-->
+    <string name="select_language_title">Select Language</string>
+
+    <!--======================================================================-->
+    <string name="pay_status_pending">Pendiente</string>
+    <string name="pay_status_payment_success">Pago Exitoso</string>
+    <string name="pay_status_failed">Fallido</string>
+    <string name="pay_status_time_out">Caducado</string>
+    <string name="pay_status_refund_success">Reembolso Exitoso</string>
+    <!--======================================================================-->
+    <string name="print_merchant">COMERCIANTE:</string>
+    <string name="print_merchant_no">Nº DEL COMERCIANTE:</string>
+    <string name="print_fiat_amount">Importe del Dinero Fiduciario:</string>
+    <string name="print_payment_method">Método del Pago:</string>
+    <string name="print_digital_amount">Importe del Dinero Digital:</string>
+    <string name="print_ordernum">Nº de la Orden:</string>
+    <string name="print_date">FECHA:</string>
+
+    <!--======================================================================-->
+
+    <string name="error_merchant_not_exist">El Usuario No Existe</string>//商户不存在
+    <string name="error_signature_error">Firma Incorrecta</string>//签名错误
+    <string name="error_request_failed">Solicitud Fallida</string>//请求失败
+    <string name="error_login_again">Vuelva a Iniciar Sesión</string>//重新登录
+    <string name="error_wrong_password">Contraseña Incorrecta</string>//密码错误
+
+    <!--======================================================================-->
+
+    <string name="header_pulldown">Deslice abajo para Actualizar</string>//下拉刷新
+    <string name="header_refreshing">Actualizando</string>//正在刷新...
+    <string name="header_release">Suelte el tacto para Actualizar</string>//释放立即刷新
+    <string name="header_finish">Actualización Hecha</string>//刷新完成
+    <string name="header_failed">Actualización Fallida</string>//刷新失败
+
+    <string name="footer_loading">Cargando</string>//正在加载...
+    <string name="footer_finish">Carga Exitosa</string>//加载完成
+    <string name="footer_failed">Carga Fallida</string>//加载失败
+    <string name="footer_nothing">No Hay Más Datos</string>//没有更多数据了
+
+    <string name="global_loading">Cargando</string>
+
+
+    <!--======================================================================-->
+    <string name="user_language_english">English</string>
+    <string name="user_language_indonesian">Indonesian</string>// 印尼 Indonesia
+    <string name="user_language_español">Español</string>// 西班牙 Español
+    <string name="user_language_português">português</string>//葡萄牙 português
+
+
+
+</resources>
